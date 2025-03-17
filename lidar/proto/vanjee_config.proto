@@ -1,0 +1,29 @@
+syntax = "proto2";
+
+package apollo.drivers.vanjee;
+
+message Config {
+  optional string model = 1;
+  optional uint32 connect_type = 2;
+  optional uint32 host_msop_port = 3;
+  optional uint32 lidar_msop_port = 4;
+  optional float start_angle = 5;
+  optional float end_angle = 6;
+  optional float min_distance = 7;
+  optional float max_distance = 8;
+  optional string point_cloud_masking = 9;
+  optional bool use_lidar_clock = 10;
+  optional bool ts_first_point = 11;
+  optional bool use_offset_timestamp = 12;
+  optional bool dense_points = 13;
+  optional bool wait_for_difop = 14;
+  optional bool config_from_file = 15;
+  optional string angle_path_ver = 16;
+  optional string angle_path_hor = 17;
+  optional uint32 publish_mode = 18;
+  optional string host_address = 19;
+  optional string lidar_address = 20;
+  optional string pointcloud_channel = 21;
+  optional string scan_channel = 22;
+  optional string frame_id = 23;
+}

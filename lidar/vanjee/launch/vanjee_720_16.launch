@@ -1,0 +1,7 @@
+<cyber>
+    <module>
+        <name>vanjee_720_16</name>
+        <dag_conf>/apollo/modules/drivers/lidar/vanjee/dag/vanjee_720_16.dag</dag_conf>
+        <process_name>vanjee</process_name>
+    </module>
+</cyber>
